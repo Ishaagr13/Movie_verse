@@ -1,0 +1,22 @@
+.first {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 100px 20px;
+    overflow: hidden;
+  }
+  
+  .first > * {
+    flex-basis: calc(25% - 20px);
+    flex-grow: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .first {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
